@@ -1,8 +1,8 @@
 /*
  * heapsort.c
  *
- *  Created on: Jul 1, 2013
- *      Author: 
+ *  Created on: Jan 4, 2022
+ *      Author: David Chiu, Ben Gamble
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,7 +22,7 @@ void heapSort(struct Employee *A, int n)
 
 	while(n>1){
 		if(n==2){
-		swap(&A[n-1],&A[0]);
+		swap(&A[n-1],&A[0]);//since there is only 2 left, we dont need to heapify
 		n--;
 		}
 		else{
